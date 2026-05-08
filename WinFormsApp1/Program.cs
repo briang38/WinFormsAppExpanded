@@ -8,9 +8,20 @@ namespace WinFormsApp1
         [STAThread]
         static void Main()
         {
-            // To customize application configuration such as set high DPI settings or default font,
-            // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
+
+            // Show splash screen first
+            SplashScreen1 splash = new SplashScreen1();
+            splash.Show();
+            splash.Refresh();
+
+            // Wait 3 seconds
+            System.Threading.Thread.Sleep(3000);
+
+            // Close splash screen
+            splash.Close();
+
+            // Launch main form
             Application.Run(new BillingForm());
         }
     }

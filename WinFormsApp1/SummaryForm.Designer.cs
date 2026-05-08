@@ -46,7 +46,6 @@
             label1.Size = new Size(62, 15);
             label1.TabIndex = 0;
             label1.Text = "Total Sales";
-            
             // 
             // label2
             // 
@@ -56,7 +55,6 @@
             label2.Size = new Size(79, 15);
             label2.TabIndex = 1;
             label2.Text = "Average Sales";
-            
             // 
             // label3
             // 
@@ -112,7 +110,6 @@
             Title.Size = new Size(257, 32);
             Title.TabIndex = 7;
             Title.Text = "R 'n R Billing Summary";
-            
             // 
             // SummaryForm
             // 
@@ -130,6 +127,7 @@
             Controls.Add(label1);
             Name = "SummaryForm";
             Text = "R 'n R Billing Summary";
+            Load += this.SummaryForm_Load;
             ResumeLayout(false);
             PerformLayout();
         }

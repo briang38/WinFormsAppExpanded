@@ -140,6 +140,7 @@
             textBoxDescription.TabIndex = 23;
             textBoxDescription.TabStop = false;
             textBoxDescription.Text = "Calculate sales for R 'n R for Reading and Refreshment";
+            textBoxDescription.TextChanged += textBoxDescription_TextChanged;
             // 
             // okButton
             // 

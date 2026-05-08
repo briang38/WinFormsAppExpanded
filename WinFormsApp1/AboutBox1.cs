@@ -12,12 +12,12 @@ namespace WinFormsApp1
         public AboutBox1()
         {
             InitializeComponent();
-            this.Text = String.Format("About {0}", AssemblyTitle);
-            this.labelProductName.Text = AssemblyProduct;
-            this.labelVersion.Text = String.Format("Version {0}", AssemblyVersion);
-            this.labelCopyright.Text = AssemblyCopyright;
-            this.labelCompanyName.Text = AssemblyCompany;
-            this.textBoxDescription.Text = AssemblyDescription;
+            this.Text = "About R 'n R for Reading and Refreshment";
+            this.labelProductName.Text = "R 'n R for Reading and Refreshment";
+            this.labelVersion.Text = "Version 1.0.0.0";
+            this.labelCopyright.Text = "Copyright 2024";
+            this.labelCompanyName.Text = "R 'n R for Reading and Refreshment";
+            this.textBoxDescription.Text = "Calculate sales for R 'n R for Reading and Refreshment";
         }
 
         #region Assembly Attribute Accessors
@@ -99,5 +99,10 @@ namespace WinFormsApp1
             }
         }
         #endregion
+
+        private void textBoxDescription_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
